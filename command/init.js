@@ -4,7 +4,11 @@ const co = require('co')
 const prompt = require('co-prompt')
 const config = require('../templates')
 const chalk = require('chalk')
-
+/**
+ * child_process 提供了几种创建子进程的方式
+ * 异步方式:spawn、exec、execFile、fork
+ * 同步方式：spawnSync、execSync、execFileSync
+ */
 module.exports = () => {
   co(function*() {
     // 处理用户输入
